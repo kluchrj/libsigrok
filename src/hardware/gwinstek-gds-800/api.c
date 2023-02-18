@@ -121,7 +121,7 @@ static struct sr_dev_inst *probe_device(struct sr_scpi_dev_inst *scpi, struct sr
 	devc->frame_limit = 1;
 	devc->sample_rate = 0.0;
 	devc->df_started = FALSE;
-	if ((strncmp(sdi->model, "GDS-2", 5) == 0 || strncmp(sdi-model->, "GDS-1", 5) == 0) &&
+	if ((strncmp(sdi->model, "GDS-2", 5) == 0 || strncmp(sdi->model, "GDS-1", 5) == 0) &&
 		(strlen(sdi->model) == 8) &&
 		(sdi->model[7] == '4')) {
 		devc->num_acq_channel = 4;
